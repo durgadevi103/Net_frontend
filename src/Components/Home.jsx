@@ -5,7 +5,7 @@ import axios from 'axios';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-const Home = () => {
+const Home = ({addToCart}) => {
   const [products, setProducts] = useState([]);
   const [error,setError] = useState(null)
 

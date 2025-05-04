@@ -6,7 +6,7 @@ import '/src/Css/Skincare.css'
 
 
 
-const SkinCare = () => {
+const SkinCare = ({addToCart}) => {
 
    const [products, setProducts] = useState([]);
    const [error,setError] = useState(null)
@@ -62,7 +62,7 @@ const SkinCare = () => {
                         <Card.Body id='ver-card' >
                         <Card.Title id='pro-name'>{user.product_name}</Card.Title>
                         <p id='pro-price' style={{marginTop:"20px"}}>{user.product_price}</p>
-                        <Button className='addbtn' variant="primary" style={{marginTop:"10px",marginBottom:"10px"}}>Add Cart</Button>
+                        <Button className='addbtn' variant="primary" style={{marginTop:"10px",marginBottom:"10px"}} onClick={() => addToCart(user)}>Add Cart</Button>
                         </Card.Body>
                     </Card>
                     </div>
@@ -85,7 +85,7 @@ const SkinCare = () => {
                         <Card.Body id='ver-card' >
                         <Card.Title id='pro-name'>{user.product_name}</Card.Title>
                         <p id='pro-price'style={{marginTop:"20px"}}>{user.product_price}</p>
-                        <Button className='addbtn' variant="primary" style={{marginTop:"10px",marginBottom:"10px"}}>Add Cart</Button>
+                        <Button className='addbtn' variant="primary" style={{marginTop:"10px",marginBottom:"10px"}} onClick={() => addToCart(user)}>Add Cart</Button>
                         </Card.Body>
                     </Card>
                     </div>
@@ -108,7 +108,7 @@ const SkinCare = () => {
                         <Card.Body id='ver-card' >
                         <Card.Title id='pro-name' >{user.product_name}</Card.Title>
                         <p id='pro-price' style={{marginTop:"20px"}}>{user.product_price}</p>
-                        <Button className='addbtn' variant="primary" style={{marginTop:"10px",marginBottom:"10px"}}>Add Cart</Button>
+                        <Button className='addbtn' variant="primary" style={{marginTop:"10px",marginBottom:"10px"}} onClick={() => addToCart(user)}>Add Cart</Button>
                         </Card.Body>
                     </Card>
                     </div>
@@ -130,7 +130,7 @@ const SkinCare = () => {
                         <Card.Body id='ver-card' >
                         <Card.Title id='pro-name'>{user.product_name}</Card.Title>
                         <p id='pro-price' style={{marginTop:"20px"}}>{user.product_price}</p>
-                        <Button className='addbtn' variant="primary" style={{marginTop:"10px",marginBottom:"10px"}}>Add Cart</Button>
+                        <Button className='addbtn' variant="primary" style={{marginTop:"10px",marginBottom:"10px"}} onClick={() => addToCart(user)}>Add Cart</Button>
                         </Card.Body>
                     </Card>
                     </div>
@@ -153,7 +153,7 @@ const SkinCare = () => {
                         <Card.Body id='ver-card' >
                         <Card.Title id='pro-name'>{user.product_name}</Card.Title>
                         <p id='pro-price' style={{marginTop:"20px"}}>{user.product_price}</p>
-                        <Button className='addbtn' variant="primary" style={{marginTop:"10px",marginBottom:"10px"}}>Add Cart</Button>
+                        <Button className='addbtn' variant="primary" style={{marginTop:"10px",marginBottom:"10px"}} onClick={() => addToCart(user)}>Add Cart</Button>
                         </Card.Body>
                     </Card>
                     </div>

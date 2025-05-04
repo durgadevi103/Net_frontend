@@ -7,7 +7,8 @@ import logo1 from "/src/assets/Mylogo.jpeg"
 const NavbarDA = ({ cart }) => {
   const [show, setShow] = useState(false);
   const [carts, setCarts] = useState(cart);
-  const baseURL = "http://127.0.0.1:8000";
+
+
 
   const handleShow = () => {
     setCarts(cart);
@@ -60,7 +61,7 @@ const NavbarDA = ({ cart }) => {
           ) : (
             carts.map((item, index) => (
               <Card key={index} className=" align-items-center mb-3 w-50">
-                <Card.Img variant="top" src={item.product_image.startsWith(baseURL) ? item.product_image : baseURL + item.product_image} className='addtocart_image' />
+                <Card.Img variant="top" src={item.product_image} className='addtocart_image' />
                 <Card.Body className="text-center">
                   <Card.Title className='addtocart_name'>{item.product_name}</Card.Title>
                   <Card.Text className='addtocart_price'>Price: {item.product_price}</Card.Text>

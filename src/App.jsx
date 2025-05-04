@@ -24,7 +24,7 @@ const App = () => {
       <BrowserRouter>
       <NavbarDA cart={cart}/>
       <Routes>
-        <Route path='/*' element={<Home/>}/>
+        <Route path='/*' element={<Home addToCart={handleAddToCart}/>}/>
         <Route path='/skincare' element={<SkinCare addToCart={handleAddToCart}/>}/>
         <Route path='/haircare' element={<HairCare addToCart={handleAddToCart}/>}/>
         <Route path='/cosmetics' element={<Cosmetics addToCart={handleAddToCart}/>}/>
