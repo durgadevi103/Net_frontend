@@ -1,0 +1,39 @@
+/* Footer Styling */
+.footercontent {
+    background-color: #007bff;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(167, 171, 174);
+    padding: 20px;
+    text-align: center;
+}
+
+#footimage1 {
+    width: 100px;
+    height: 85px;
+    border-radius: 20%;
+    margin-bottom: 20px;
+    
+}
+
+
+
+.footercontent h5 {
+    color: black;
+    font-weight: bold;
+}
+
+.foot-icons{
+    padding: 15px;
+    margin-left: -25px;
+    
+}
+
+.foot-icons:hover{
+    color: black;
+    cursor: pointer;
+}
+
+#footer-list{
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,136 @@
+#skincareback{
+    background-color: lightskyblue;
+   padding: 10px 20px;
+}
+
+
+#ver-card{
+    width: 100%;
+    height: 180px;
+}
+
+#topic{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color:rgb(117, 9, 117);
+    
+   
+}
+.product{
+    font-size: 35px;
+    margin-left: 10px;
+    color: azure;
+    background: linear-gradient(to right, red , blue);
+    
+}
+
+#pro-name{
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 600;
+}
+
+#pro-price{
+    font-size: 15px;
+    font-weight:500;
+    color: black;
+}
+
+
+
+
+.main-card{
+    width: 260px;
+    margin-left: 20px;
+}
+
+.main-card:hover{
+    scale: 1.1;
+}
+
+.card-container {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* 1440px and above – 6 cards per row */
+  @media (min-width: 1440px) and (max-width: 2560px) {
+    .card-container {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    .main-card{
+        width: 213px;
+        margin-left: 45px;
+    }
+
+  }
+
+  @media (min-width: 1024px) and (max-width: 1339px) {
+    .card-container {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    .main-card{
+        width: 213px;
+        margin-left: 45px;
+    }
+
+
+
+
+  }
+
+  
+  /* 768px to 1199px – 4 cards per row */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .card-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .main-card{
+        width: 250px;
+        margin-left: 45px;
+    }
+
+
+
+
+  }
+  
+  /* 425px to 767px – 2 cards per row */
+  @media (min-width: 425px) and (max-width: 767px) {
+    .card-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-card{
+        width: 260px;
+        margin-left: 45px;
+    }
+
+  }
+  
+  /* below 425px – 1 card per row */
+  @media (max-width: 321px) {
+    .card-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-card{
+        width: 260px;
+        margin-left: 1px;
+    }
+  }
+
+  @media (min-width: 321px) and (max-width: 376px) {
+    .card-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-card{
+        width: 260px;
+        margin-left: 20px;
+    }
+  }
