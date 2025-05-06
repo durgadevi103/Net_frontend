@@ -79,7 +79,7 @@ const Home = ({addToCart}) => {
                     <Button className='addbtn' variant="primary" style={{ marginTop: "10px", marginBottom: "10px" }} onClick={() => addToCart(user)}>Add Cart</Button>
                   </Card.Body>
                 </Card>
-              </div>
+              </div>  
             ))
           }
         </div>

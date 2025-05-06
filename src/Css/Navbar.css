@@ -47,10 +47,22 @@
   }
   
   /* Cart and Login Button */
+  /* .cart4 {
+    cursor: pointer;
+    color: black;
+    background-color: #cc5500;
+    margin-left: 15px;
+  } */
+
+
   .cart4 {
     cursor: pointer;
     color: black;
-    margin-left: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .cart4:hover {
+    color: rgb(39, 36, 36);
   }
   
   #Mylogin {
@@ -82,7 +94,7 @@
   }
   
   .offcanvas-cart .addtocart_image {
-    width: 100%;
+    width: 40%;
     max-height: 200px;
     object-fit: cover;
   }
